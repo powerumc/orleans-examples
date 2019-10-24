@@ -35,7 +35,7 @@ ReceiveMessage: Hello powerumc
 ReceiveMessage: Hello Hanji
 ```
 
-## Client 1
+## Client 2
 
 ```bash
 cd HelloObservers.Host

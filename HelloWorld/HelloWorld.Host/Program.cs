@@ -26,10 +26,9 @@ namespace HelloWorld.Host
                 .ConfigureLogging(builder => builder.AddConsole())
                 .Build();
             
-            var hostTask = host.StartAsync();
+            await host.StartAsync();
             Console.WriteLine("Press any key...");
             Console.ReadLine();
-            await hostTask;
             
             await host.StopAsync();
         }

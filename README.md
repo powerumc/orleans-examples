@@ -2,6 +2,9 @@
 
 [Orleans](https://github.com/dotnet/orleans) is virtual actor model implementation.
 
-- [HelloWorld (Understand basically `Grain`.)](./HelloWorld/README.md)
-- [HelloGrainLifecycle (Lifecycle shows how to inject objects and manage their lifecycle.)](./HelloGrainLifecycle/README.md)
-- [HelloObservers (Implements `Pub/Sub` pattern through `Grain` with `IGrainObserver`. )](./HelloObservers/README.md)
+## Grain Basic
+
+- [HelloWorld](./HelloWorld/README.md) - Understand basically `Grain`.
+- [HelloGrainLifecycle](./HelloGrainLifecycle/README.md) - Lifecycle shows how to inject objects and manage their lifecycle.
+- [HelloObservers](./HelloObservers/README.md) - Implements `Pub/Sub` pattern through `Grain` with `IGrainObserver`.
+- [HelloReentrant](./HelloReentrant/README.md) - Concurrently calls the `Grain`.

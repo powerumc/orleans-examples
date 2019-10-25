@@ -39,6 +39,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloObservers.Grains", "He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloObservers", "HelloObservers\HelloObservers\HelloObservers.csproj", "{7FF42C0E-BCF6-4144-B38B-80D2D9D8F2BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloReentrant", "HelloReentrant", "{4C32F57B-2976-4651-957B-21BC0E1A3C31}"
+ProjectSection(SolutionItems) = preProject
+	HelloReentrant\README.md = HelloReentrant\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloReentrant", "HelloReentrant\HelloReentrant\HelloReentrant.csproj", "{3517903D-9A12-4BB9-8A8C-B37A15ED5277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloReentrant.Grains", "HelloReentrant\HelloReentrant.Grains\HelloReentrant.Grains.csproj", "{7D8091B8-DD1E-4A32-9FBF-B6C4CFD1B065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloReentrant.Client", "HelloReentrant\HelloReentrant.Client\HelloReentrant.Client.csproj", "{BCA19920-9681-481B-856B-5FC7C5B61742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloReentrant.Host", "HelloReentrant\HelloReentrant.Host\HelloReentrant.Host.csproj", "{A22E8896-55A8-46FA-AFE2-B237FC610E33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +70,10 @@ Global
 		{4A6D9226-DFFF-464F-8D59-D48A9FBED77A} = {30460692-86D6-45F5-A0D2-916C73602654}
 		{2E719D0A-5459-4088-87BE-64F988211D4C} = {30460692-86D6-45F5-A0D2-916C73602654}
 		{7FF42C0E-BCF6-4144-B38B-80D2D9D8F2BC} = {30460692-86D6-45F5-A0D2-916C73602654}
+		{3517903D-9A12-4BB9-8A8C-B37A15ED5277} = {4C32F57B-2976-4651-957B-21BC0E1A3C31}
+		{7D8091B8-DD1E-4A32-9FBF-B6C4CFD1B065} = {4C32F57B-2976-4651-957B-21BC0E1A3C31}
+		{BCA19920-9681-481B-856B-5FC7C5B61742} = {4C32F57B-2976-4651-957B-21BC0E1A3C31}
+		{A22E8896-55A8-46FA-AFE2-B237FC610E33} = {4C32F57B-2976-4651-957B-21BC0E1A3C31}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB8A5ED6-30B2-4284-A0EE-DF09F2A4CDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -107,5 +124,21 @@ Global
 		{7FF42C0E-BCF6-4144-B38B-80D2D9D8F2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FF42C0E-BCF6-4144-B38B-80D2D9D8F2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FF42C0E-BCF6-4144-B38B-80D2D9D8F2BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3517903D-9A12-4BB9-8A8C-B37A15ED5277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3517903D-9A12-4BB9-8A8C-B37A15ED5277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3517903D-9A12-4BB9-8A8C-B37A15ED5277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3517903D-9A12-4BB9-8A8C-B37A15ED5277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8091B8-DD1E-4A32-9FBF-B6C4CFD1B065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8091B8-DD1E-4A32-9FBF-B6C4CFD1B065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8091B8-DD1E-4A32-9FBF-B6C4CFD1B065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8091B8-DD1E-4A32-9FBF-B6C4CFD1B065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA19920-9681-481B-856B-5FC7C5B61742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA19920-9681-481B-856B-5FC7C5B61742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA19920-9681-481B-856B-5FC7C5B61742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA19920-9681-481B-856B-5FC7C5B61742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22E8896-55A8-46FA-AFE2-B237FC610E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22E8896-55A8-46FA-AFE2-B237FC610E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22E8896-55A8-46FA-AFE2-B237FC610E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22E8896-55A8-46FA-AFE2-B237FC610E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

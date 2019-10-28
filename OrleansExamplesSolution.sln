@@ -52,6 +52,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloReentrant.Client", "He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloReentrant.Host", "HelloReentrant\HelloReentrant.Host\HelloReentrant.Host.csproj", "{A22E8896-55A8-46FA-AFE2-B237FC610E33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloDashboard", "HelloDashboard", "{050963A5-CD79-40BB-9E7B-49B8B239AA04}"
+ProjectSection(SolutionItems) = preProject
+	HelloDashboard\README.md = HelloDashboard\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDashboard.Host", "HelloDashboard\HelloDashboard.Host\HelloDashboard.Host.csproj", "{05AEC853-F33B-4310-AAF1-FD78C48A84B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDashboard.Client", "HelloDashboard\HelloDashboard.Client\HelloDashboard.Client.csproj", "{A4FE2E2C-A1E8-4DF1-8370-E28A9B96DA02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDashboard.Grains", "HelloDashboard\HelloDashboard.Grains\HelloDashboard.Grains.csproj", "{74E44126-E020-43F2-B892-8D10166371AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDashboard", "HelloDashboard\HelloDashboard\HelloDashboard.csproj", "{780DB65A-9D8A-4D57-B6FE-08D53F706598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +87,10 @@ Global
 		{7D8091B8-DD1E-4A32-9FBF-B6C4CFD1B065} = {4C32F57B-2976-4651-957B-21BC0E1A3C31}
 		{BCA19920-9681-481B-856B-5FC7C5B61742} = {4C32F57B-2976-4651-957B-21BC0E1A3C31}
 		{A22E8896-55A8-46FA-AFE2-B237FC610E33} = {4C32F57B-2976-4651-957B-21BC0E1A3C31}
+		{05AEC853-F33B-4310-AAF1-FD78C48A84B2} = {050963A5-CD79-40BB-9E7B-49B8B239AA04}
+		{A4FE2E2C-A1E8-4DF1-8370-E28A9B96DA02} = {050963A5-CD79-40BB-9E7B-49B8B239AA04}
+		{74E44126-E020-43F2-B892-8D10166371AE} = {050963A5-CD79-40BB-9E7B-49B8B239AA04}
+		{780DB65A-9D8A-4D57-B6FE-08D53F706598} = {050963A5-CD79-40BB-9E7B-49B8B239AA04}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB8A5ED6-30B2-4284-A0EE-DF09F2A4CDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -140,5 +157,21 @@ Global
 		{A22E8896-55A8-46FA-AFE2-B237FC610E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22E8896-55A8-46FA-AFE2-B237FC610E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22E8896-55A8-46FA-AFE2-B237FC610E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05AEC853-F33B-4310-AAF1-FD78C48A84B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05AEC853-F33B-4310-AAF1-FD78C48A84B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05AEC853-F33B-4310-AAF1-FD78C48A84B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05AEC853-F33B-4310-AAF1-FD78C48A84B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4FE2E2C-A1E8-4DF1-8370-E28A9B96DA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4FE2E2C-A1E8-4DF1-8370-E28A9B96DA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4FE2E2C-A1E8-4DF1-8370-E28A9B96DA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4FE2E2C-A1E8-4DF1-8370-E28A9B96DA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E44126-E020-43F2-B892-8D10166371AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E44126-E020-43F2-B892-8D10166371AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E44126-E020-43F2-B892-8D10166371AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E44126-E020-43F2-B892-8D10166371AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780DB65A-9D8A-4D57-B6FE-08D53F706598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780DB65A-9D8A-4D57-B6FE-08D53F706598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780DB65A-9D8A-4D57-B6FE-08D53F706598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780DB65A-9D8A-4D57-B6FE-08D53F706598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

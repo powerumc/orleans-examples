@@ -65,6 +65,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDashboard.Grains", "He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDashboard", "HelloDashboard\HelloDashboard\HelloDashboard.csproj", "{780DB65A-9D8A-4D57-B6FE-08D53F706598}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloRequestContext", "HelloRequestContext", "{77FD9297-CE90-416B-B94B-EBD3FAA74660}"
+ProjectSection(SolutionItems) = preProject
+	HelloRequestContext\README.md = HelloRequestContext\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloRequestContext.Host", "HelloRequestContext\HelloRequestContext.Host\HelloRequestContext.Host.csproj", "{191712D6-D3CB-43EC-B07F-C2A50B965450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloRequestContext.Client", "HelloRequestContext\HelloRequestContext.Client\HelloRequestContext.Client.csproj", "{BF2C7DD1-825D-4930-B06C-72E4F5C1575D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloRequestContext", "HelloRequestContext\HelloRequestContext\HelloRequestContext.csproj", "{3EC56ED4-91C3-4A42-A1AB-A09F035CC864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloRequestContext.Grains", "HelloRequestContext\HelloRequestContext.Grains\HelloRequestContext.Grains.csproj", "{02548B38-4784-4E4C-8D15-5F5DA16B5B86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +104,10 @@ Global
 		{A4FE2E2C-A1E8-4DF1-8370-E28A9B96DA02} = {050963A5-CD79-40BB-9E7B-49B8B239AA04}
 		{74E44126-E020-43F2-B892-8D10166371AE} = {050963A5-CD79-40BB-9E7B-49B8B239AA04}
 		{780DB65A-9D8A-4D57-B6FE-08D53F706598} = {050963A5-CD79-40BB-9E7B-49B8B239AA04}
+		{191712D6-D3CB-43EC-B07F-C2A50B965450} = {77FD9297-CE90-416B-B94B-EBD3FAA74660}
+		{BF2C7DD1-825D-4930-B06C-72E4F5C1575D} = {77FD9297-CE90-416B-B94B-EBD3FAA74660}
+		{3EC56ED4-91C3-4A42-A1AB-A09F035CC864} = {77FD9297-CE90-416B-B94B-EBD3FAA74660}
+		{02548B38-4784-4E4C-8D15-5F5DA16B5B86} = {77FD9297-CE90-416B-B94B-EBD3FAA74660}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB8A5ED6-30B2-4284-A0EE-DF09F2A4CDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -173,5 +190,21 @@ Global
 		{780DB65A-9D8A-4D57-B6FE-08D53F706598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780DB65A-9D8A-4D57-B6FE-08D53F706598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780DB65A-9D8A-4D57-B6FE-08D53F706598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191712D6-D3CB-43EC-B07F-C2A50B965450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191712D6-D3CB-43EC-B07F-C2A50B965450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191712D6-D3CB-43EC-B07F-C2A50B965450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191712D6-D3CB-43EC-B07F-C2A50B965450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2C7DD1-825D-4930-B06C-72E4F5C1575D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2C7DD1-825D-4930-B06C-72E4F5C1575D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2C7DD1-825D-4930-B06C-72E4F5C1575D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2C7DD1-825D-4930-B06C-72E4F5C1575D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC56ED4-91C3-4A42-A1AB-A09F035CC864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC56ED4-91C3-4A42-A1AB-A09F035CC864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC56ED4-91C3-4A42-A1AB-A09F035CC864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC56ED4-91C3-4A42-A1AB-A09F035CC864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02548B38-4784-4E4C-8D15-5F5DA16B5B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02548B38-4784-4E4C-8D15-5F5DA16B5B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02548B38-4784-4E4C-8D15-5F5DA16B5B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02548B38-4784-4E4C-8D15-5F5DA16B5B86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

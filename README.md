@@ -4,9 +4,10 @@
 
 ## Grain Basic
 
-- [HelloWorld](./HelloWorld/README.md) - Understand basically `Grain`.
-- [HelloGrainLifecycle](./HelloGrainLifecycle/README.md) - Lifecycle shows how to inject objects and manage their lifecycle.
-- [HelloObservers](./HelloObservers/README.md) - Implements `Pub/Sub` pattern through `Grain` with `IGrainObserver`.
-- [HelloReentrant](./HelloReentrant/README.md) - Concurrently calls the `Grain`.
-- [HelloDashboard](./HelloDashboard/README.md) - Sample `Orleans Dashboard`.
-- [HelloRequestContext](./HelloRequestContext/README.md) - `RequestContext` is propagated to all child `Grains`.
+- [HelloWorld](./HelloWorld/) - Understand basically `Grain`.
+- [HelloGrainLifecycle](./HelloGrainLifecycle/) - Lifecycle shows how to inject objects and manage their lifecycle.
+- [HelloObservers](./HelloObservers/) - Implements `Pub/Sub` pattern through `Grain` with `IGrainObserver`.
+- [HelloReentrant](./HelloReentrant/) - Concurrently calls the `Grain`.
+- [HelloDashboard](./HelloDashboard/) - Sample `Orleans Dashboard`.
+- [HelloRequestContext](./HelloRequestContext/) - `RequestContext` is propagated to all child `Grains`.
+- [HelloCodeGen](./HelloCodeGen/) - Runtime code generation with `Microsoft.Orleans.OrleansCodeGenerator`.

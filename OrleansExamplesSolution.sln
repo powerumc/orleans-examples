@@ -91,6 +91,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCodeGen.Client", "Hell
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCodeGen.Grains", "HelloCodeGen\HelloCodeGen.Grains\HelloCodeGen.Grains.csproj", "{40FCB41B-65D3-4F14-A9D3-3FE198EDE953}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloPersistence.Host", "HelloPersistence\HelloPersistence.Host\HelloPersistence.Host.csproj", "{B41C2909-1B0C-4E1D-B711-1D1E6BB6F1E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloPersistence", "HelloPersistence", "{E68A1669-DAF2-4E81-873B-2AF3B7E12423}"
+ProjectSection(SolutionItems) = preProject
+	HelloPersistence\README.md = HelloPersistence\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloPersistence.Client", "HelloPersistence\HelloPersistence.Client\HelloPersistence.Client.csproj", "{AF273192-3838-4976-90E4-8334E9A73BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloPersistence.Grains", "HelloPersistence\HelloPersistence.Grains\HelloPersistence.Grains.csproj", "{080208F8-5609-4419-8CC1-6502D3BC831D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloPersistence", "HelloPersistence\HelloPersistence\HelloPersistence.csproj", "{EADEA162-667E-44E4-9028-C5E00827B78A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "provisioning", "provisioning", "{9F0E2B3B-F482-4DA6-8346-B65AA2B9A51A}"
+ProjectSection(SolutionItems) = preProject
+	HelloPersistence\provisioning\docker-init-postgresql.sh = HelloPersistence\provisioning\docker-init-postgresql.sh
+	HelloPersistence\provisioning\docker-run-postgresql.sh = HelloPersistence\provisioning\docker-run-postgresql.sh
+	HelloPersistence\provisioning\init-postgresql.sql = HelloPersistence\provisioning\init-postgresql.sql
+	HelloPersistence\provisioning\postgresql-main.sql = HelloPersistence\provisioning\postgresql-main.sql
+	HelloPersistence\provisioning\postgresql-persistence.sql = HelloPersistence\provisioning\postgresql-persistence.sql
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +147,11 @@ Global
 		{D827C87A-FDF7-431B-9253-9753408BA7E2} = {BD1BB420-CDAA-43FE-80AA-2F23A97B175A}
 		{01843D01-2643-46CE-84A4-021496DA888B} = {BD1BB420-CDAA-43FE-80AA-2F23A97B175A}
 		{40FCB41B-65D3-4F14-A9D3-3FE198EDE953} = {BD1BB420-CDAA-43FE-80AA-2F23A97B175A}
+		{B41C2909-1B0C-4E1D-B711-1D1E6BB6F1E6} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
+		{AF273192-3838-4976-90E4-8334E9A73BFE} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
+		{080208F8-5609-4419-8CC1-6502D3BC831D} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
+		{EADEA162-667E-44E4-9028-C5E00827B78A} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
+		{9F0E2B3B-F482-4DA6-8346-B65AA2B9A51A} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB8A5ED6-30B2-4284-A0EE-DF09F2A4CDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -239,5 +266,21 @@ Global
 		{40FCB41B-65D3-4F14-A9D3-3FE198EDE953}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40FCB41B-65D3-4F14-A9D3-3FE198EDE953}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40FCB41B-65D3-4F14-A9D3-3FE198EDE953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41C2909-1B0C-4E1D-B711-1D1E6BB6F1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41C2909-1B0C-4E1D-B711-1D1E6BB6F1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41C2909-1B0C-4E1D-B711-1D1E6BB6F1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41C2909-1B0C-4E1D-B711-1D1E6BB6F1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF273192-3838-4976-90E4-8334E9A73BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF273192-3838-4976-90E4-8334E9A73BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF273192-3838-4976-90E4-8334E9A73BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF273192-3838-4976-90E4-8334E9A73BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080208F8-5609-4419-8CC1-6502D3BC831D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080208F8-5609-4419-8CC1-6502D3BC831D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080208F8-5609-4419-8CC1-6502D3BC831D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080208F8-5609-4419-8CC1-6502D3BC831D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADEA162-667E-44E4-9028-C5E00827B78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADEA162-667E-44E4-9028-C5E00827B78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADEA162-667E-44E4-9028-C5E00827B78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADEA162-667E-44E4-9028-C5E00827B78A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

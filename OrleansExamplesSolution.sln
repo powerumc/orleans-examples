@@ -113,6 +113,19 @@ ProjectSection(SolutionItems) = preProject
 	HelloPersistence\provisioning\postgresql-persistence.sql = HelloPersistence\provisioning\postgresql-persistence.sql
 EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloEventSourcing", "HelloEventSourcing", "{1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}"
+ProjectSection(SolutionItems) = preProject
+	HelloEventSourcing\README.md = HelloEventSourcing\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEventSourcing", "HelloEventSourcing\HelloEventSourcing\HelloEventSourcing.csproj", "{AA0C7325-99B8-4280-B594-4D336668FEDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEventSourcing.Grains", "HelloEventSourcing\HelloEventSourcing.Grains\HelloEventSourcing.Grains.csproj", "{D63B16A1-A054-4B91-9836-B70A40256D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEventSourcing.Client", "HelloEventSourcing\HelloEventSourcing.Client\HelloEventSourcing.Client.csproj", "{4A1F6F6D-464C-4D3C-8535-12221523A0B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEventSourcing.Host", "HelloEventSourcing\HelloEventSourcing.Host\HelloEventSourcing.Host.csproj", "{FE007A97-2C4E-42A9-A141-5C908EF430B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -152,6 +165,10 @@ Global
 		{080208F8-5609-4419-8CC1-6502D3BC831D} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
 		{EADEA162-667E-44E4-9028-C5E00827B78A} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
 		{9F0E2B3B-F482-4DA6-8346-B65AA2B9A51A} = {E68A1669-DAF2-4E81-873B-2AF3B7E12423}
+		{AA0C7325-99B8-4280-B594-4D336668FEDF} = {1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}
+		{D63B16A1-A054-4B91-9836-B70A40256D87} = {1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}
+		{4A1F6F6D-464C-4D3C-8535-12221523A0B7} = {1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}
+		{FE007A97-2C4E-42A9-A141-5C908EF430B1} = {1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB8A5ED6-30B2-4284-A0EE-DF09F2A4CDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -282,5 +299,21 @@ Global
 		{EADEA162-667E-44E4-9028-C5E00827B78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EADEA162-667E-44E4-9028-C5E00827B78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EADEA162-667E-44E4-9028-C5E00827B78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA0C7325-99B8-4280-B594-4D336668FEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA0C7325-99B8-4280-B594-4D336668FEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA0C7325-99B8-4280-B594-4D336668FEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA0C7325-99B8-4280-B594-4D336668FEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63B16A1-A054-4B91-9836-B70A40256D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63B16A1-A054-4B91-9836-B70A40256D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63B16A1-A054-4B91-9836-B70A40256D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63B16A1-A054-4B91-9836-B70A40256D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1F6F6D-464C-4D3C-8535-12221523A0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1F6F6D-464C-4D3C-8535-12221523A0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1F6F6D-464C-4D3C-8535-12221523A0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1F6F6D-464C-4D3C-8535-12221523A0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE007A97-2C4E-42A9-A141-5C908EF430B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE007A97-2C4E-42A9-A141-5C908EF430B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE007A97-2C4E-42A9-A141-5C908EF430B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE007A97-2C4E-42A9-A141-5C908EF430B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

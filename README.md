@@ -11,4 +11,5 @@
 - [HelloDashboard](./HelloDashboard/) - Sample `Orleans Dashboard`.
 - [HelloRequestContext](./HelloRequestContext/) - `RequestContext` is propagated to all child `Grains`.
 - [HelloCodeGen](./HelloCodeGen/) - Runtime code generation with `Microsoft.Orleans.OrleansCodeGenerator`.
-- [HelloPersistence](./HelloPersistence) - How to configure persistently `Grain` storage. Here uses [PostgreSQL](https://www.postgresql.org/).
+- [HelloPersistence](./HelloPersistence/) - How to configure persistently `Grain` storage. Here uses [PostgreSQL](https://www.postgresql.org/).
+- [HelloEventSourcing](./HelloEventSourcing/) - About Orleans EventSourcing. See you the `Grains Streams` of pub/sub.

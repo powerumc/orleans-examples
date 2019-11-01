@@ -31,7 +31,7 @@ namespace HelloInterceptors.Host
                 .ConfigureServices(services =>
                     {
                         services.AddSingleton<IIncomingGrainCallFilter, GrainLoggingIncomingCallFilter>();
-                        services.AddSingleton<IOutgoingGrainCallFilter, GrainLoggingOutcomingCallFilter>();
+                        services.AddSingleton<IOutgoingGrainCallFilter, GrainLoggingOutgoingCallFilter>();
                     })
                 .ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory().WithCodeGeneration())
                 .UseLocalhostClustering()

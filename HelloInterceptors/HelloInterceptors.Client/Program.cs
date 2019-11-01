@@ -14,7 +14,7 @@ namespace HelloInterceptors.Client
             var client = new ClientBuilder()
                 .ConfigureServices(services =>
                     {
-                        services.AddSingleton<IOutgoingGrainCallFilter, GrainLoggingOutcomingCallFilter>();
+                        services.AddSingleton<IOutgoingGrainCallFilter, GrainLoggingOutgoingCallFilter>();
                     })
                 .ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory().WithCodeGeneration())
                 .UseLocalhostClustering()

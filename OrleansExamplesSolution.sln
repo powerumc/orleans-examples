@@ -126,6 +126,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEventSourcing.Client",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEventSourcing.Host", "HelloEventSourcing\HelloEventSourcing.Host\HelloEventSourcing.Host.csproj", "{FE007A97-2C4E-42A9-A141-5C908EF430B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloInterceptors", "HelloInterceptors", "{2C58C0BA-0540-47D2-A806-E86FA53A3B1E}"
+ProjectSection(SolutionItems) = preProject
+	HelloInterceptors\README.md = HelloInterceptors\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloInterceptors", "HelloInterceptors\HelloInterceptors\HelloInterceptors.csproj", "{D38F2D0E-1A3F-4A22-A6FE-CC7283336C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloInterceptors.Client", "HelloInterceptors\HelloInterceptors.Client\HelloInterceptors.Client.csproj", "{C2BA04C5-EB21-465A-8365-A01CADBCE226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloInterceptors.Grains", "HelloInterceptors\HelloInterceptors.Grains\HelloInterceptors.Grains.csproj", "{4EFA6428-F7F5-4D71-A633-D6C3E0F7E6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloInterceptors.Host", "HelloInterceptors\HelloInterceptors.Host\HelloInterceptors.Host.csproj", "{08AE42DC-5BFC-4807-B463-9045D60ACF86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,6 +182,10 @@ Global
 		{D63B16A1-A054-4B91-9836-B70A40256D87} = {1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}
 		{4A1F6F6D-464C-4D3C-8535-12221523A0B7} = {1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}
 		{FE007A97-2C4E-42A9-A141-5C908EF430B1} = {1DA86D8E-9204-43F8-8E58-8C151D8FCEA0}
+		{D38F2D0E-1A3F-4A22-A6FE-CC7283336C8F} = {2C58C0BA-0540-47D2-A806-E86FA53A3B1E}
+		{C2BA04C5-EB21-465A-8365-A01CADBCE226} = {2C58C0BA-0540-47D2-A806-E86FA53A3B1E}
+		{4EFA6428-F7F5-4D71-A633-D6C3E0F7E6D0} = {2C58C0BA-0540-47D2-A806-E86FA53A3B1E}
+		{08AE42DC-5BFC-4807-B463-9045D60ACF86} = {2C58C0BA-0540-47D2-A806-E86FA53A3B1E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB8A5ED6-30B2-4284-A0EE-DF09F2A4CDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -315,5 +332,21 @@ Global
 		{FE007A97-2C4E-42A9-A141-5C908EF430B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE007A97-2C4E-42A9-A141-5C908EF430B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE007A97-2C4E-42A9-A141-5C908EF430B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D38F2D0E-1A3F-4A22-A6FE-CC7283336C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38F2D0E-1A3F-4A22-A6FE-CC7283336C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38F2D0E-1A3F-4A22-A6FE-CC7283336C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38F2D0E-1A3F-4A22-A6FE-CC7283336C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BA04C5-EB21-465A-8365-A01CADBCE226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BA04C5-EB21-465A-8365-A01CADBCE226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BA04C5-EB21-465A-8365-A01CADBCE226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BA04C5-EB21-465A-8365-A01CADBCE226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFA6428-F7F5-4D71-A633-D6C3E0F7E6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFA6428-F7F5-4D71-A633-D6C3E0F7E6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFA6428-F7F5-4D71-A633-D6C3E0F7E6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFA6428-F7F5-4D71-A633-D6C3E0F7E6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AE42DC-5BFC-4807-B463-9045D60ACF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AE42DC-5BFC-4807-B463-9045D60ACF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AE42DC-5BFC-4807-B463-9045D60ACF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AE42DC-5BFC-4807-B463-9045D60ACF86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

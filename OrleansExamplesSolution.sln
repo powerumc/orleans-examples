@@ -149,6 +149,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloStateless.Host", "Hell
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloStateless.Client", "HelloStateless\HelloStateless.Client\HelloStateless.Client.csproj", "{7C5F5ABB-A66A-456D-9D90-419503C04727}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloMultiClusters", "HelloMultiClusters", "{B72BB672-33A5-4013-A190-B9CE01DCCB3C}"
+ProjectSection(SolutionItems) = preProject
+	HelloMultiClusters\README.md = HelloMultiClusters\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloMultiClusters", "HelloMultiClusters\HelloMultiClusters\HelloMultiClusters.csproj", "{3D6916C9-CE60-4D80-A274-7C24E8A63537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloMultiClusters.Grains", "HelloMultiClusters\HelloMultiClusters.Grains\HelloMultiClusters.Grains.csproj", "{3864110E-CBB7-4941-B0ED-F560DF9BCBF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloMultiClusters.Client", "HelloMultiClusters\HelloMultiClusters.Client\HelloMultiClusters.Client.csproj", "{971810FB-5C21-4CD3-991A-ACED0A86D37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloMultiClusters.Host", "HelloMultiClusters\HelloMultiClusters.Host\HelloMultiClusters.Host.csproj", "{F59C84FB-F0AA-4FE8-B6B9-A85CCD0F1B4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "provisioning", "provisioning", "{DE83EE98-19A9-40AC-B5FA-850CF87259A5}"
+ProjectSection(SolutionItems) = preProject
+	HelloMultiClusters\provisioning\docker-init-postgresql.sh = HelloMultiClusters\provisioning\docker-init-postgresql.sh
+	HelloMultiClusters\provisioning\docker-run-postgresql.sh = HelloMultiClusters\provisioning\docker-run-postgresql.sh
+	HelloMultiClusters\provisioning\postgresql-clustering.sql = HelloMultiClusters\provisioning\postgresql-clustering.sql
+	HelloMultiClusters\provisioning\postgresql-main.sql = HelloMultiClusters\provisioning\postgresql-main.sql
+	HelloMultiClusters\provisioning\init-postgresql.sql = HelloMultiClusters\provisioning\init-postgresql.sql
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -200,6 +222,11 @@ Global
 		{2A80E7EC-44E5-4DB7-A507-E114A97C6B0A} = {793BEAB8-C639-42C0-9BA6-C186C59A20F0}
 		{459544D0-CCF6-422C-B690-E09CF79F3111} = {793BEAB8-C639-42C0-9BA6-C186C59A20F0}
 		{7C5F5ABB-A66A-456D-9D90-419503C04727} = {793BEAB8-C639-42C0-9BA6-C186C59A20F0}
+		{3D6916C9-CE60-4D80-A274-7C24E8A63537} = {B72BB672-33A5-4013-A190-B9CE01DCCB3C}
+		{3864110E-CBB7-4941-B0ED-F560DF9BCBF8} = {B72BB672-33A5-4013-A190-B9CE01DCCB3C}
+		{971810FB-5C21-4CD3-991A-ACED0A86D37D} = {B72BB672-33A5-4013-A190-B9CE01DCCB3C}
+		{F59C84FB-F0AA-4FE8-B6B9-A85CCD0F1B4E} = {B72BB672-33A5-4013-A190-B9CE01DCCB3C}
+		{DE83EE98-19A9-40AC-B5FA-850CF87259A5} = {B72BB672-33A5-4013-A190-B9CE01DCCB3C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FB8A5ED6-30B2-4284-A0EE-DF09F2A4CDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -378,5 +405,21 @@ Global
 		{7C5F5ABB-A66A-456D-9D90-419503C04727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C5F5ABB-A66A-456D-9D90-419503C04727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C5F5ABB-A66A-456D-9D90-419503C04727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6916C9-CE60-4D80-A274-7C24E8A63537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6916C9-CE60-4D80-A274-7C24E8A63537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6916C9-CE60-4D80-A274-7C24E8A63537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6916C9-CE60-4D80-A274-7C24E8A63537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3864110E-CBB7-4941-B0ED-F560DF9BCBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3864110E-CBB7-4941-B0ED-F560DF9BCBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3864110E-CBB7-4941-B0ED-F560DF9BCBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3864110E-CBB7-4941-B0ED-F560DF9BCBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971810FB-5C21-4CD3-991A-ACED0A86D37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971810FB-5C21-4CD3-991A-ACED0A86D37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971810FB-5C21-4CD3-991A-ACED0A86D37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971810FB-5C21-4CD3-991A-ACED0A86D37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F59C84FB-F0AA-4FE8-B6B9-A85CCD0F1B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59C84FB-F0AA-4FE8-B6B9-A85CCD0F1B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59C84FB-F0AA-4FE8-B6B9-A85CCD0F1B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59C84FB-F0AA-4FE8-B6B9-A85CCD0F1B4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -22,3 +22,4 @@
 
 ## Hosting
 - [HelloMultiClusters](./HelloMultiClusters) - How to configure multi cluster.
+- [HelloProtobuf](./HelloProtobuf) - How to configure `Protobuf` serializer/deserialzer configuration for messaging.

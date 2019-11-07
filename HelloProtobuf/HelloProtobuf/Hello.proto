@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "HelloProtobuf";
+
+message HelloRequest {
+    string Guid = 1;
+    repeated Message Message = 2;
+}
+
+message Message {
+    MessageType Type = 1;
+    string Message = 2;
+
+    enum MessageType {
+        None = 0;
+        Notice = 1;
+        Whisper = 2;
+    }
+}
+
+message HelloResponse {
+    string From = 1;
+    string Message = 2;
+}

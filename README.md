@@ -14,11 +14,11 @@
 - [HelloCodeGen](./HelloCodeGen/) - Runtime code generation with `Microsoft.Orleans.OrleansCodeGenerator`.
 
 ### Advanced
-- [HelloPersistence](./HelloPersistence/) - How to configure persistently `Grain` storage. Here uses [PostgreSQL](https://www.postgresql.org/).
+- [HelloPersistence](./HelloPersistence/) - How to configure persistently `Grain` storage with [PostgreSQL](https://www.postgresql.org/).
 - [HelloEventSourcing](./HelloEventSourcing/) - About Orleans EventSourcing. See you the `Grains Streams` of pub/sub.
 - [HelloInterceptors](./HelloInterceptors/) - Incoming and Outgoing interception the `Grain`.
 - [HelloStream](./HelloStream/) - A simple stream provider and grain streams.
 
 ## Hosting
-- [HelloMultiClusters](./HelloMultiClusters) - How to configure multi cluster.
+- [HelloMultiClusters](./HelloMultiClusters) - How to configure multi cluster with [PostgreSQL](https://www.postgresql.org/).
 - [HelloProtobuf](./HelloProtobuf) - How to configure `Protobuf` serializer/deserialzer configuration for messaging.

@@ -1,6 +1,6 @@
 # HelloPersistence
 
-How to configure persistently `Grain` storage. Here uses [PostgreSQL](https://www.postgresql.org/). 
+How to configure persistently `Grain` storage with [PostgreSQL](https://www.postgresql.org/). 
 
 #### Requirements
 

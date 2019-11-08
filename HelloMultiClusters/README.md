@@ -1,6 +1,6 @@
 # HelloMultiClusters
 
-How to configure multi cluster.
+How to configure multi cluster with [PostgreSQL](https://www.postgresql.org/).
 
 #### Requirements
 

@@ -17,8 +17,7 @@
 - [HelloPersistence](./HelloPersistence/) - How to configure persistently `Grain` storage. Here uses [PostgreSQL](https://www.postgresql.org/).
 - [HelloEventSourcing](./HelloEventSourcing/) - About Orleans EventSourcing. See you the `Grains Streams` of pub/sub.
 - [HelloInterceptors](./HelloInterceptors/) - Incoming and Outgoing interception the `Grain`.
-
-## Streaming
+- [HelloStream](./HelloStream/) - A simple stream provider and grain streams.
 
 ## Hosting
 - [HelloMultiClusters](./HelloMultiClusters) - How to configure multi cluster.
